@@ -74,3 +74,11 @@ The project does not claim a new exoplanet discovery.
 - Implement interactive BLS parameter selection
 - Include transit model fitting and uncertainty estimation
 - Develop an astronomy research API
+
+## Author
+
+Natnicha Thongkampleo
+
+Mahidol University — Faculty of Information and Communication Technology, B.Sc. in  DST
+
+Portfolio project for an astronomy-related internship application.

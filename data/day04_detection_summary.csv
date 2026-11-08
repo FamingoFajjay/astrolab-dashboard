@@ -1,0 +1,2 @@
+target,tic_id,sector,best_period_days,best_duration_days,best_transit_time_btjd,best_depth,bls_power,reference_period_days_approx,absolute_period_difference_days,relative_period_difference_percent
+Pi Mensae,261136679,1,6.26808936312104,0.12,1325.5009604950603,0.0002825168006175938,1.7040661051761463e-05,6.27,0.0019106368789598704,0.030472677495372733

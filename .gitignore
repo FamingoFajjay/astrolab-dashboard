@@ -1,0 +1,26 @@
+# Python virtual environments
+.venv/
+venv/
+path/to/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Local Streamlit configuration and secrets
+.streamlit/secrets.toml
+
+# Environment variables
+.env
+.env.*
+
+# Editor settings
+.vscode/
+.idea/
+
+# Temporary files
+*.log

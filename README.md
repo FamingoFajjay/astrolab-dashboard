@@ -1,84 +1,125 @@
-# AstroLab — Exoplanet Transit Explorer
+# AstroLab 🔭
+### Interactive Exoplanet Transit Analysis Toolkit
 
-An interactive astronomy data analysis dashboard built using Python and Streamlit.
+A Python-based scientific data analysis project exploring periodic transit-like signals in NASA TESS light curves.
 
-## Overview
+**Live Demo:** [Insert verified Streamlit URL]  
+**Target:** Pi Mensae (TIC 261136679)  
+**Data:** NASA TESS, Sector 1  
+**Development:** 7-Day Portfolio Sprint
 
-AstroLab explores stellar brightness measurements from NASA's Transiting Exoplanet Survey Satellite (TESS).
+![AstroLab Dashboard](screenshots/dashboard_overview.png)
 
-The project focuses on Pi Mensae (TIC 261136679), using TESS Sector 1 observations to investigate periodic transit-like signals.
+## 1. Motivation
 
-## Features
+Astronomical observations produce large volumes of time-series data. Identifying meaningful signals requires data preprocessing, statistical analysis, and careful interpretation.
 
-- Interactive TESS light curve visualization
-- Box Least Squares (BLS) periodogram
-- Phase-folded light curve
-- Transit candidate summary
-- Dataset explorer and CSV export
-- Automated data validation tests
+AstroLab was developed to explore how data science and software engineering can support astronomical research.
 
-## Technology Stack
+## 2. Research Question
 
-- Python
-- NumPy
-- Pandas
-- Astropy (analysis notebooks)
-- Lightkurve (data retrieval)
-- Plotly
-- Streamlit
-- Pytest
+Can Box Least Squares identify periodic transit-like signals in a preprocessed TESS light curve of Pi Mensae, and how does the recovered period compare with a published reference value?
 
-## Data Source
+## 3. Features
 
-NASA TESS observations, retrieved from the Mikulski Archive for Space Telescopes (MAST).
+- TESS light curve visualization
+- Data cleaning and normalization
+- Box Least Squares period search
+- Phase-folded light curve visualization
+- Interactive Plotly charts
+- Dataset inspection and CSV export
+- Automated testing with Pytest
 
-Target: Pi Mensae (TIC 261136679)
+## 4. Technologies
 
-Sector: 1
+| Area | Technologies |
+|---|---|
+| Programming | Python |
+| Data Processing | NumPy, Pandas |
+| Astronomy | Lightkurve, Astropy |
+| Visualization | Matplotlib, Plotly |
+| Web Application | Streamlit |
+| Testing | Pytest |
+| Deployment | GitHub, Streamlit Community Cloud |
 
-Flux product: SPOC PDCSAP
+## 5. Data Source
 
-## Installation
+The project uses publicly available observations from NASA's Transiting Exoplanet Survey Satellite (TESS), retrieved through the Mikulski Archive for Space Telescopes (MAST).
 
-1. Clone or download the repository.
-2. Install the required dependencies:
+- Target: Pi Mensae
+- TIC ID: 261136679
+- Sector: 1
+- Data product: SPOC PDCSAP
+
+## 6. Methodology
+
+1. Retrieve the target light curve.
+2. Inspect missing values and data quality.
+3. Normalize the stellar flux.
+4. Apply preliminary outlier filtering.
+5. Search trial periods using Box Least Squares.
+6. Identify the highest-scoring BLS candidate.
+7. Visualize the periodogram and phase-folded observations.
+8. Compare the result with a published reference period.
+
+## 7. Results
+
+| Measurement | Result |
+|---|---|
+| Valid observations | [Actual value] |
+| Best BLS period | [Actual value] days |
+| Estimated transit depth | [Actual value] % |
+| Estimated transit duration | [Actual value] days |
+| Approximate reference period | 6.27 days |
+| Absolute period difference | [Actual value] days |
+
+**Interpretation:** [Describe whether the recovered period is consistent with the reference and what the phase-folded light curve shows.]
+
+![BLS Periodogram](screenshots/bls_periodogram.png)
+
+## 8. Installation
+
+Install the required dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-3. Start the dashboard:
+Run the dashboard:
 
 ```bash
 python -m streamlit run app.py
 ```
 
-4. Open the local URL shown in the terminal.
-
-## Testing
+Run automated tests:
 
 ```bash
 python -m pytest -v
 ```
 
-## Scientific Limitations
+## 9. Scientific Limitations
 
-The dashboard presents preliminary transit candidate analysis based on a limited TESS observation window. BLS results may be affected by noise, stellar variability, instrumental systematics, period aliases, and preprocessing choices.
+- The analysis uses a limited observation window.
+- BLS models transit-like dips using a simplified box shape.
+- Outlier removal may affect genuine astrophysical signals.
+- Instrumental systematics and stellar variability may affect the periodogram.
+- The analysis does not include comprehensive false-positive validation.
+- The highest BLS peak does not independently confirm a planet.
 
-The project does not claim a new exoplanet discovery.
+## 10. Future Work
 
-## Future Improvements
+- Analyze multiple TESS sectors.
+- Include measurement uncertainties.
+- Improve preprocessing and transit validation.
+- Support additional stellar targets.
+- Add configurable BLS analysis to the dashboard.
+- Develop a reusable astronomy data analysis API.
 
-- Support additional TESS targets and sectors
-- Add user-uploaded light curves
-- Implement interactive BLS parameter selection
-- Include transit model fitting and uncertainty estimation
-- Develop an astronomy research API
+## Acknowledgements
 
-## Dashboard Preview
+This project uses publicly available NASA TESS data archived by MAST and open-source scientific Python libraries.
 
-![AstroLab Dashboard](screenshots/dashboard_overview.png)
+## Author
 
-![TESS Light Curve](screenshots/light_curve.png)
-
-![BLS Periodogram](screenshots/bls_periodogram.png)
+Natnicha Thongkampleo
+Faculty of Information and Communication Technology  - Mahidol University

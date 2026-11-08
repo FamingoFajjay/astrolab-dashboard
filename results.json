@@ -1,0 +1,16 @@
+{
+  "target": "Pi Mensae",
+  "tic_id": "261136679",
+  "mission": "TESS",
+  "sector": 1,
+  "observations": 18257,
+  "time_span_days": 27.880105402155323,
+  "median_flux": 1.0000001,
+  "best_bls_period_days": 6.26808936312104,
+  "transit_duration_days": 0.12,
+  "transit_depth_fraction": 0.0002825168006175,
+  "transit_depth_percent": 0.02825168006175,
+  "reference_period_approx_days": 6.27,
+  "absolute_period_difference_days": 0.0019106368789598704,
+  "relative_period_difference_percent": 0.030472677495372733
+}

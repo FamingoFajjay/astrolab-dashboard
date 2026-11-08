@@ -12,7 +12,7 @@ from data_utils import (
 )
 
 # --------------------------------------------------
-# # 1. Page Configuration
+# Page Configuration
 # --------------------------------------------------
 
 st.set_page_config(
@@ -35,7 +35,7 @@ st.info(
 )
 
 # --------------------------------------------------
-# # 2. Load datasets
+# Load datasets
 # --------------------------------------------------
 
 @st.cache_data
@@ -76,7 +76,7 @@ except (FileNotFoundError, ValueError, pd.errors.ParserError) as error:
     st.stop()
 
 # --------------------------------------------------
-# # 3. Sidebar controls
+# sidebar controls
 # --------------------------------------------------
 
 st.sidebar.header("Dashboard Controls")
@@ -121,7 +121,7 @@ if debug_mode:
     st.sidebar.write("Summary shape:", summary_df.shape)
 
 # --------------------------------------------------
-# # 4. Summary metrics
+# Summary metrics
 # --------------------------------------------------
 
 col1, col2, col3, col4, col5 = st.columns(5)
@@ -152,7 +152,7 @@ col5.metric(
 )
 
 # --------------------------------------------------
-# # 5. Tabs
+# Tabs
 # --------------------------------------------------
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
@@ -164,7 +164,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 ])
 
 # --------------------------------------------------
-# Tab 1: Overview
+# Overview
 # --------------------------------------------------
 
 with tab1:
@@ -206,7 +206,7 @@ with tab1:
             st.write(f"Absolute period difference: {difference:.4f}")
 
 # --------------------------------------------------
-# Tab 2: Light Curve
+# Light Curve
 # --------------------------------------------------
 
 with tab2:
@@ -260,7 +260,7 @@ with tab2:
     )
 
 # --------------------------------------------------
-# Tab 3: BLS Periodogram
+# BLS Periodogram
 # --------------------------------------------------
 
 with tab3:
@@ -319,7 +319,7 @@ with tab3:
     )
 
 # --------------------------------------------------
-# Tab 4: Phase Folding
+# Phase Folding
 # --------------------------------------------------
 
 with tab4:
@@ -371,7 +371,7 @@ with tab4:
     )
 
 # --------------------------------------------------
-# Tab 5: Data Explorer
+# Data Explorer
 # --------------------------------------------------
 
 with tab5:
@@ -407,7 +407,7 @@ with tab5:
     )
 
 # --------------------------------------------------
-#  Footer
+# Footer
 # --------------------------------------------------
 
 st.divider()

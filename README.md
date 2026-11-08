@@ -74,3 +74,11 @@ The project does not claim a new exoplanet discovery.
 - Implement interactive BLS parameter selection
 - Include transit model fitting and uncertainty estimation
 - Develop an astronomy research API
+
+## Dashboard Preview
+
+![AstroLab Dashboard](screenshots/dashboard_overview.png)
+
+![TESS Light Curve](screenshots/light_curve.png)
+
+![BLS Periodogram](screenshots/bls_periodogram.png)

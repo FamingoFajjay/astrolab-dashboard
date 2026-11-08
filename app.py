@@ -21,7 +21,7 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("🔭 AstroLab - NARIT Intership Porfolio")
+st.title("🔭 AstroLab")
 st.subheader("Exoplanet Transit Explorer")
 
 st.caption(
